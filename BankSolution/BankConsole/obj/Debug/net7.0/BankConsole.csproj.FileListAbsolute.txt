@@ -1,0 +1,15 @@
+C:\Users\Darkm\Desktop\Curso.Net\Curso-.NET\BankSolution\BankConsole\bin\Debug\net7.0\BankConsole.exe
+C:\Users\Darkm\Desktop\Curso.Net\Curso-.NET\BankSolution\BankConsole\bin\Debug\net7.0\BankConsole.deps.json
+C:\Users\Darkm\Desktop\Curso.Net\Curso-.NET\BankSolution\BankConsole\bin\Debug\net7.0\BankConsole.runtimeconfig.json
+C:\Users\Darkm\Desktop\Curso.Net\Curso-.NET\BankSolution\BankConsole\bin\Debug\net7.0\BankConsole.dll
+C:\Users\Darkm\Desktop\Curso.Net\Curso-.NET\BankSolution\BankConsole\bin\Debug\net7.0\BankConsole.pdb
+C:\Users\Darkm\Desktop\Curso.Net\Curso-.NET\BankSolution\BankConsole\obj\Debug\net7.0\BankConsole.csproj.AssemblyReference.cache
+C:\Users\Darkm\Desktop\Curso.Net\Curso-.NET\BankSolution\BankConsole\obj\Debug\net7.0\BankConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Darkm\Desktop\Curso.Net\Curso-.NET\BankSolution\BankConsole\obj\Debug\net7.0\BankConsole.AssemblyInfoInputs.cache
+C:\Users\Darkm\Desktop\Curso.Net\Curso-.NET\BankSolution\BankConsole\obj\Debug\net7.0\BankConsole.AssemblyInfo.cs
+C:\Users\Darkm\Desktop\Curso.Net\Curso-.NET\BankSolution\BankConsole\obj\Debug\net7.0\BankConsole.csproj.CoreCompileInputs.cache
+C:\Users\Darkm\Desktop\Curso.Net\Curso-.NET\BankSolution\BankConsole\obj\Debug\net7.0\BankConsole.dll
+C:\Users\Darkm\Desktop\Curso.Net\Curso-.NET\BankSolution\BankConsole\obj\Debug\net7.0\refint\BankConsole.dll
+C:\Users\Darkm\Desktop\Curso.Net\Curso-.NET\BankSolution\BankConsole\obj\Debug\net7.0\BankConsole.pdb
+C:\Users\Darkm\Desktop\Curso.Net\Curso-.NET\BankSolution\BankConsole\obj\Debug\net7.0\BankConsole.genruntimeconfig.cache
+C:\Users\Darkm\Desktop\Curso.Net\Curso-.NET\BankSolution\BankConsole\obj\Debug\net7.0\ref\BankConsole.dll
