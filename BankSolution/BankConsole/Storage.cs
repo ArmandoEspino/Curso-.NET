@@ -1,5 +1,7 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System;
+using System.Text.RegularExpressions;
 
 namespace BankConsole;
 
@@ -89,6 +91,9 @@ public static class Storage{
 
         listUsers.Remove(userToDelete);
 
+        if (listUsers.Remove(userToDelete) != true)
+            return "User not Found";
+
         JsonSerializerSettings settings = new JsonSerializerSettings { Formatting = Formatting.Indented };
 
         string json = JsonConvert.SerializeObject(listUsers, settings);
@@ -96,5 +101,45 @@ public static class Storage{
         File.WriteAllText(filePath, json);
 
         return "Success";
+    }
+
+    public static string UserExist(int ID){
+
+        string usersInFile = "";
+        var listUsers = new List<User>();
+
+        if (File.Exists(filePath))
+            usersInFile = File.ReadAllText(filePath);
+        
+        var listObjects = JsonConvert.DeserializeObject<List<object>>(usersInFile);
+
+        if (listObjects == null)
+            return "There aren't users today";
+        
+        foreach (object obj in listObjects){
+            User newUser;
+            JObject user = (JObject)obj;
+
+            if (user.ContainsKey("TaxRegime"))
+                newUser = user.ToObject<Client>();
+            else
+                newUser = user.ToObject<Employee>();
+
+            listUsers.Add(newUser);
+        }
+
+        var userRepeat =  listUsers.Where(user => user.GetID() == ID);
+
+        if(userRepeat != null)
+            return " ";
+
+        return "ID Exist";
+    }
+
+    public static bool EmailCorrect(string email){
+
+        string pattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
+
+        return Regex.IsMatch(email, pattern);
     }
 }

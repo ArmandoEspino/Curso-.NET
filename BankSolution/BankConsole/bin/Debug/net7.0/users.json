@@ -14,5 +14,13 @@
     "Email": "alex@gmail.com",
     "Balance": 1050.0,
     "RegisterDate": "2023-10-04T16:00:03.5206188-06:00"
+  },
+  {
+    "TaxRegime": "D",
+    "ID": 10,
+    "Name": "Juan",
+    "Email": "Juan@gmail.com",
+    "Balance": 0.0,
+    "RegisterDate": "2023-10-04T23:03:53.0480538-06:00"
   }
 ]

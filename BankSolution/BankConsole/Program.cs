@@ -40,25 +40,63 @@ void ShowMenu(){
     void CreateUser(){
 
         Console.Clear();
+        int ID;
+        decimal balance;
+        char userType;
         Console.WriteLine("Ingresa la informacion del usuario");
 
-        Console.Write("ID: ");
-        int ID = int.Parse(Console.ReadLine());
+        do{
+            do{
+                Console.Write("ID: ");
+                ID = int.Parse(Console.ReadLine());
 
+                if(ID <= 0){
+                    Console.WriteLine("Escriba un numero positivo");
+                    Thread.Sleep(2000);
+                }
+            }while(ID<0);
+            string result = Storage.UserExist(ID);
+
+            if(result.Equals("ID Exist")){
+                Console.Write("\nEl ID ya existe");
+                Thread.Sleep(2000);
+                Console.Clear();
+            }
+            else
+                break;
+        }while(true);
+ 
         Console.Write("Nombre: ");
         string name = Console.ReadLine();
 
         Console.Write("Email: ");
         string email = Console.ReadLine();
 
-        Console.Write("Saldo: ");
-        decimal balance = decimal.Parse(Console.ReadLine());
+        do{
+            Console.Write("Saldo: ");
+            balance = decimal.Parse(Console.ReadLine());
+            if(balance < 0){
+                Console.Write("Debe ser un numero positivo");
+                Thread.Sleep(2000);
+                Console.Clear();
+            }
+        }while(balance < 0);
 
+        do{
         Console.Write("Escribe 'c' si el usuario es un Cliente, 'e' si es un Empleado: ");
-        char userType = char.Parse(Console.ReadLine());
+        userType = char.Parse(Console.ReadLine());
+        if(userType.Equals('c'))
+            break;
+        if(userType.Equals('e'))
+            break;
+        
+        Console.Write("Debe ingresar 'c' si el usuario es un Cliente, 'e' si es un Empleado");
+        Thread.Sleep(2000);
+        Console.Clear();
 
+        }while(true);
         User newUser;
-
+        
         if(userType.Equals('c')){
 
             Console.Write("Regime Fiscal: ");
@@ -83,10 +121,19 @@ void ShowMenu(){
 
     void DeleteUser(){
 
+        int ID;
+        do{        
         Console.Clear();
 
-        Console.Write("Ingresa el ID del usuario a eliminar: ");
-        int ID = int.Parse(Console.ReadLine());
+        do{
+            Console.Write("Ingresa el ID del usuario a eliminar: ");
+            ID = int.Parse(Console.ReadLine());
+            if(ID < 0){
+                Console.Write("Debe ingresar un numero positivo");
+                Thread.Sleep(2000);
+                Console.Clear();
+            }
+        }while(ID < 0);
 
         string result = Storage.DeleteUser(ID);
 
@@ -96,6 +143,7 @@ void ShowMenu(){
             Thread.Sleep(2000);
             ShowMenu();
         }
+        }while(true);
     }
 }
 
