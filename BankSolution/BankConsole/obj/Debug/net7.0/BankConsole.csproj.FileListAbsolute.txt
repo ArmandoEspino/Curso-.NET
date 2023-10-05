@@ -13,3 +13,10 @@ C:\Users\Darkm\Desktop\Curso.Net\Curso-.NET\BankSolution\BankConsole\obj\Debug\n
 C:\Users\Darkm\Desktop\Curso.Net\Curso-.NET\BankSolution\BankConsole\obj\Debug\net7.0\BankConsole.pdb
 C:\Users\Darkm\Desktop\Curso.Net\Curso-.NET\BankSolution\BankConsole\obj\Debug\net7.0\BankConsole.genruntimeconfig.cache
 C:\Users\Darkm\Desktop\Curso.Net\Curso-.NET\BankSolution\BankConsole\obj\Debug\net7.0\ref\BankConsole.dll
+C:\Users\Darkm\Desktop\Curso.Net\Curso-.NET\BankSolution\BankConsole\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\Darkm\Desktop\Curso.Net\Curso-.NET\BankSolution\BankConsole\obj\Debug\net7.0\BankConsole.csproj.CopyComplete
+C:\Users\Darkm\Desktop\Curso.Net\Curso-.NET\BankSolution\BankConsole\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
+C:\Users\Darkm\Desktop\Curso.Net\Curso-.NET\BankSolution\BankConsole\bin\Debug\net7.0\MailKit.dll
+C:\Users\Darkm\Desktop\Curso.Net\Curso-.NET\BankSolution\BankConsole\bin\Debug\net7.0\MimeKit.dll
+C:\Users\Darkm\Desktop\Curso.Net\Curso-.NET\BankSolution\BankConsole\bin\Debug\net7.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Darkm\Desktop\Curso.Net\Curso-.NET\BankSolution\BankConsole\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll
